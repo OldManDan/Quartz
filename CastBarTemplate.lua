@@ -504,9 +504,9 @@ function CastBarTemplate:ApplySettings()
 			end
 		end
 	end
-	self.Text:SetFont(media:Fetch("font", db.font), db.fontsize)
+	self.Text:SetFont(media:Fetch("font", db.font), db.fontsize, "OUTLINE")
 	self.Text:SetShadowColor( 0, 0, 0, 1)
-	self.Text:SetShadowOffset( 0.8, -0.8 )
+	self.Text:SetShadowOffset( 1, -1 )
 	self.Text:SetTextColor(unpack(Quartz3.db.profile.spelltextcolor))
 	self.Text:SetNonSpaceWrap(false)
 	self.Text:SetHeight(db.h)
